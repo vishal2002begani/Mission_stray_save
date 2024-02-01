@@ -1,13 +1,707 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* NAVBAR */
+
+
+.nv{
+  background: #F2EE9D;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn{
+  background-color: #7A9D54;
+  
+  color: white;
+}
+
+.don{
+  margin: 0px 10px;
+
+}
+
+.btn:hover{
+  background-color: #557A46;
+  color:white;
+}
+
+.form-control{
+  border: 1px solid black;
+}
+
+.nav-link{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.nav-link:hover{
+  color: #557A46;
+}
+
+
+
+
+
+
+/* corousel */
+
+.header {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.carousel-caption>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.textcontent{
+  margin-bottom: 15px;
+  text-align: center !important;
+}
+p.textcontent{
+ font-size: 15px; 
+}
+
+.carousel-btn{
+  margin: 20px 10px;
+  padding: 10px 30px;
+}
+
+.carousel-btn:hover{
+  background-color: #557A46;
+  color:white;
+}
+
+.carousel-text{
+  margin-left: 300px;
+}
+
+
+.carousel-item{
+  height: 100vh;
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+  background-color: #557A46;
+}
+
+.carousel-item>img{
+  height: 80vh !important;
+  position: relative;
+  top:160px
+}
+
+.carousel-inner{
+  height: 100vh;
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.carousel-caption h1 {
+  font-weight: bold;
+  font-size: 1.2em; /* small size since this is the default in Bootstrap */
+  text-align:left;
+}
+
+.carousel-caption p {
+  font-size: 1em; /* small size since this is the default in Bootstrap */
+  text-align:left;
+}
+
+
+
+
+/* DATA */
+
+.data{
+  margin: 50px 0px;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+}
+
+.card{
+  width: 13%;
+  height: 230px;
+  background-color: #7A9D54;
+  border: 2px solid black;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img{
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  top: 10px;
+}
+
+.card p{
+  line-height: 10px;
+  font-size: 50px;
+  margin-top: 100px;
+  color: #8C3333;
+  text-align: center;
+} 
+
+.card h4{
+  text-align: center;
+  color: #8C3333;
+}
+
+.card-detail{
+  font-size: 15px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.card:hover{
+  background-color: #557A46;
+}
+
+
+/* heroes */
+
+.lead{
+  line-height: 5px;
+  text-align: center;
+  margin: 30px 0px;
+}
+.logolinks{
+  text-decoration: none;
+}
+.logolinks:hover{
+  filter: brightness(85%) !important;
+}
+/* info */
+
+.glancedata{
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;   
+  background-color: #557A46;
+  height: 85vh;
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.glancedata h1{
+  
+  color: rgb(255,255,255);
+  position: absolute;
+  margin: 30px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.infocard{
+  width: 13%;
+  height: 250px;
+  background-color: #557A46;
+  border: 4px solid rgb(255,255,255);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0px;
+}
+
+.infocard img{
+  position: relative;
+  top:2px;
+  width: 60%;
+  height: 40%;
+}
+
+.infocard p{
+  line-height: 20px;
+  font-size: 35px;
+  margin-top: 30px;
+  color: rgb(255,255,255);
+  text-align: center;
+} 
+
+.infocard-detail{
+  color: rgb(255,255,255);
+  font-size: 15px;
+  text-align: center;
+  line-height: 15px;
+  margin: 0px 5px;
+  position: relative;
+  top: 7px;
+}
+
+.infocard:hover{
+  background-color: #7A9D54;
+}
+
+
+
+/* news */
+.newsintro{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 133vh;
+}
+.newsintro img{
+  align-self: center;
+  width: 50%;
+  z-index: 2;
+  position: relative;
+  top: -5px;
+}
+
+.newsus{
+  background-color: #557A46;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  top: -93px;
+}
+
+.newsus h1{
+  color: rgb(255,255,255);
+  margin: 30px 0px;
+  width: 100%;
+  
+}
+
+.newsletter{
+  display: flex;
+  justify-content: space-around;
+  height: 95vh;
+}
+
+.newsletter img{
+  height: 45vh;
+  width: 25%;
+  margin: 10px 50px;
+  display: inline;
+  position: relative;
+  top: -60px;
+}
+
+.btnsub{
+  width: 83% !important;
+}
+
+
+/* footer */
+.footer{
+  padding-top: 60px;
+  background-color: #8C3333;
+  position: relative;
+  color: white;
+}
+
+footer{
+  background-color: #8C3333;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 575px){
+  .carousel-caption h1 { font-size: 1em;}
+  .carousel-caption p {display: none}
+  .carousel-caption{
+  display:flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  margin-bottom: 5%;
+  }
+
+  .carousel-btn{
+      display: block;
+      margin: 10px 5px;
+      padding: 5px 25px; 
+      width: 100%; 
+    } 
+  
+  .carousel-caption>ul{
+      padding-left:0px;
+      display: block;
+  }
+  .carousel-item{
+      height: 40vh;
+  }
+
+  .carousel-inner{
+      height: 40vh !important;
+  }
+  .carousel-item>img{
+      position: relative;
+      top: 100px !important;
+      width: 35% !important;
+      height: 35vh !important;
+  }
+  .carousel-caption{
+      position: relative;
+      top: 100px !important;
+
+  }
+  /* DATA */
+  .data{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      row-gap: 50px;
+  }
+  .card{
+      place-self: center;
+      width: 70%;
+      height: 150px;
+  }
+  .card-detail{
+      font-size: 12px;
+  }
+  .card img{
+      position: absolute;
+      width: 30%;
+      height: 30%;
+      top: 10px;
+  }
+  
+  .card p{
+      line-height: 0px;
+      font-size: 30px;
+      margin-top: 60px;
+  } 
+  
+  .card h4{
+
+      font-size: 15px;
+      margin: 0px;
+  }
+
+  .newsus{
+      position: relative;
+      top: -53px !important;
+      height: 130vh;
+  }
+
+  /* INFO */
+  glancedata{
+      height: 80vh;
+      width: 100%;
+  }
+  .subglance{
+      margin-top: 85px;
+      height: 90vh;
+      display: grid;
+      grid-template-columns: repeat(3,120px);
+      grid-template-rows: repeat(2,250px);
+      row-gap: 10px;
+      column-gap: 10px;
+  }
+  .infocard{
+      place-self: center;
+      width: 100%;
+      padding:0px 0px;
+      margin: 0px;
+  }
+  .infocard p{
+      font-size: 30px;
+  }
+  .infocard-detail{
+      font-size: 13px;
+  }
+  .newsletter img{
+      width: 25%;
+      height: 25vh;
+  }
+  .newsus{
+      position: relative;
+      top: -75px;
+      height: 145vh;
+  }
+  .newsintro{
+      height: 145vh;
+  }
+  .newsletter{
+      height: 145vh;
+  }
+
+  .footer>div{
+      width: 90% !important;
+      margin: 0px 30px;
+  }
+
+
+}
+@media (min-width: 576px) and (max-width: 768px) {
+.carousel-caption h1 { font-size: 1.3em;}
+.carousel-caption p {display: none} 
+.carousel-btn{
+  margin: 10px 5px;
+  padding: 5px 15px;
+   
+} 
+.carousel-caption{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;   
+  margin-bottom: 10%;
+  }
+  .carousel-item{
+      height: 50vh;
+  }
+  .carousel-inner{
+      height: 50vh !important;
+  }
+  .carousel-item>img{
+      position: relative;
+      top: 120px !important;
+      width: 35% !important;
+      height: 35vh !important;
+  }
+  .text-bird{
+      margin-left: 200px;
+      vertical-align: center;
+  }
+  
+  .carousel-text{
+      margin: 0px;
+  }
+  /* DATA */
+  .data{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      row-gap: 50px;
+      
+  }
+
+  .card{
+      place-self: center;
+      width: 70%;
+  }
+  .card-detail{
+      font-size: 13px;
+  }
+  /* INFO */
+  .glancedata{
+      height: 90vh;
+      width: 100%;
+  }
+  .subglance{
+
+      margin-top: 100px;
+      height: 90vh;
+      display: grid;
+      grid-template-columns: repeat(3,150px);
+      grid-template-rows: repeat(2,250px);
+      column-gap: 20px;
+      row-gap: 20px;
+  }
+  .infocard{
+      place-self: center;
+      width: 100%;
+      padding:0px 0px;
+      margin: 0px;
+  }
+  .newsletter img{
+      width: 25%;
+      height: 30vh;
+  }
+  .newsus{
+      position: relative;
+      top: -60px;
+      height: 125vh;
+  }
+  .newsintro{
+      height: 135vh;
+  }
+  .newsletter{
+      height: 135vh;
+  }
+
+  .footer>div{
+      width: 90% !important;
+      margin: 0px 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.carousel-caption h1 { font-size: 1.6em;}
+.carousel-caption p {font-size: 0.9em;} 
+.carousel-btn{
+  margin: 10px 5px;
+  padding: 5px 15px;
+  display:block;
+} 
+.carousel-caption{
+  margin-bottom: 7%;
+  }
+  .carousel-item{
+      height: 60vh;
+  }
+  
+  .carousel-item>img{
+      height: 60vh !important;
+  }
+
+  .carousel-inner{
+      height: 60vh !important;
+  }
+  .carousel-item>img{
+      position: relative;
+      top: 130px !important;
+      width: 35% !important;
+      height: 55vh !important;
+  }
+  /* DATA */
+  .data{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      row-gap: 50px;
+      
+  }
+  .card{
+      place-self: center;
+      width: 70%;
+  }
+  /* INFO */
+  .glancedata{
+      height: 95vh;
+  }
+  .subglance{
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,250px);
+      row-gap: 50px;
+  }
+  .infocard{
+      place-self: center;
+      width: 80%;
+      padding:0px 0px;
+      margin: 0px;
+  }
+  .newsletter img{
+      width: 35%;
+      height: 40vh;
+  }
+  .newsus{
+      position: relative;
+      top: -69px;
+      height: 115vh;
+  }
+  .newsintro{
+      height: 115vh;
+  }
+  .newsletter{
+      height: 115vh;
+  }
+}
+@media (min-width: 992px)  and (max-width: 1200px){
+.carousel-caption h1 { font-size: 2em;}
+.carousel-caption p {font-size: 1em;} 
+.carousel-btn{
+  margin: 15px 20px;
+  padding: 7px 20px;
+  display: block;
+}  
+.carousel-caption{
+  margin-bottom: 17%;
+  }
+  
+/* DATA */
+  .card p{
+      line-height: 10px;
+      font-size: 45px !important;
+      margin-top: 70px;
+      padding-top: 20px;
+      color: #8C3333;
+      text-align: center;
+  } 
+  .card-detail{
+      font-size: 13px;
+  }
+  /* INFO */
+  .glancedata{
+      height: 100vh;
+  }
+  .subglance{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,auto);
+  }
+  .infocard{
+      place-self: center;
+      width: 70%;
+      margin:0px;
+  }
+
+  
+  .newsletter img{
+      width: 40%;
+      position: relative;
+      top: -100px;
+  }
+  .newsus{
+      position: relative;
+      top: -80px;
+      height: 120vh;
+  }
+  .newsintro{
+      height: 130vh;
+  }
+  .newsletter{
+      height: 130vh;
+  }
+
+}
+@media (min-width: 1200px) {
+.carousel-caption h1 { font-size: 2.6em;}
+.carousel-caption p {font-size: 1.3em;}
+.carousel-btn{
+  margin: 20px 30px;
+  padding: 10px 30px;
+  display: block;
+}   
+.carousel-caption{
+  margin-bottom: 15%;
+  }
+  /* info */
+  .glancedata{
+      height: 55vh;
+  }
+  .subglance{
+      
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-template-rows: auto;
+      height: 50vh;
+  }
+  .infocard{
+      place-self: center;
+      width: 70%;
+  }
+  .newsus{
+      position: relative;
+      top: -86px;
+      height: 120vh;
+  }
+  
+
+
 }
