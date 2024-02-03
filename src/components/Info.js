@@ -19,16 +19,16 @@ const Info = () => {
                     <Info_sub image={food} saved={"300+"} />
                     <Info_sub image={chain} saved={"100+"} />
 
-                    <div className="infocard">
+                    {/* <div className="infocard infocard_change">
                         <img src="catdog.png" alt="dog logo" />
                         <p>1000+</p>
                         <div className="infocard-detail">saved animals</div>
-                    </div>
-                    <div className="infocard">
+                    </div>*/}
+                    <div className="infocard infocard_change">
                         <img src={belt} alt="cat logo" />
                         <p>50+</p>
-                        <div className="infocard-detail">dogs adopted and, 300 released</div>
-                    </div>
+                        <div className="infocard-detail infocard-detail_change">dogs adopted and, 300 released</div>
+                    </div> 
                     {/*
                     <div className="infocard">
                         <img src="health.png" alt="cow & hen" />

@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../components/images/LOGO.webp"
+import {Link} from "react-router-dom"
 function Navbar() {
     return (
         <>
@@ -7,7 +8,7 @@ function Navbar() {
                 <div className="container-fluid">
                     <a className="navbar-brand ml-5" href="/">
                         <img src={Logo} style={{ height: 50 }} alt='asdfghj' />
-                        <b style={{ "font-size": "x-large" }}>StraySaver</b>
+                        <b style={{ "fontSize": "x-large" }}>StraySaver</b>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

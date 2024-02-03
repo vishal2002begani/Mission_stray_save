@@ -15,10 +15,10 @@ const Carousel = () => {
                     <p className="textcontent">Stray animals roam the streets of India without food, veterinary care or
                         refuge from the elements. Help us give them a chance.</p>
                     <ul>
-                        <li style={{"list-style":"none"}}>
+                        <li style={{"listStyle":"none"}}>
                             <button className="btn don carousel-btn" type="submit">Donate</button>
                         </li>
-                        <li style={{"list-style": "none"}}>
+                        <li style={{"listStyle": "none"}}>
                             <button className="btn don carousel-btn" type="submit">Adopt</button>
                         </li>
                     </ul>
